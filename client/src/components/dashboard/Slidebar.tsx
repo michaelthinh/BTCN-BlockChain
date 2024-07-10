@@ -31,24 +31,6 @@ const contents = [
     url: "/dashboard/history",
     icon: <FaHistory size={25} />,
   },
-  {
-    id: 4,
-    name: "DApps",
-    url: "/dashboard/dapps",
-    icon: <GrAppsRounded size={25} />,
-  },
-  {
-    id: 5,
-    name: "Contract",
-    url: "/dashboard/contract",
-    icon: <FaShuffle size={25} />,
-  },
-  {
-    id: 6,
-    name: "Message",
-    url: "/dashboard/message",
-    icon: <TiMessages size={25} />,
-  },
 ];
 
 const Slidebar = () => {
