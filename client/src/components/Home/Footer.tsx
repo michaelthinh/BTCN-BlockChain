@@ -136,6 +136,7 @@ const Footer = () => {
             Pricing taken from <p className="text-white font-bold">Coingecko</p>
           </div>
           <p>© 2024 MyEtherWallet. All Rights reserved.</p>
+          <p>20120196 - Mai Cường Thịnh</p>
         </div>
       </div>
     </div>

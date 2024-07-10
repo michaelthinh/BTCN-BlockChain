@@ -30,16 +30,16 @@ const Home = () => {
         <div>
           <img
             className="w-[100%]"
-            src="./assets/article-1.png"
-            alt="article-1"
+            src="./assets/banner-3.png"
+            alt="banner-3"
           />
         </div>
       </section>
-      <section className="mx-auto max-w-screen-xl p-6 flex flex-wrap gap-5 justify-between">
+      <section className="mx-auto max-w-screen-xl p-6 flex flex-col flex-wrap gap-5 items-center">
         <Link to="/create-wallet">
           <div
-            className="h-[100%] w-[100%] md:w-[550px] xl:w-[600px] bg-primary-purple text-white p-6 rounded-md flex gap-8 justify-between
-                          hover:cursor-pointer hover:translate-y-1"
+            className="h-[100%] w-[100%] md:w-[550px] xl:w-[600px] bg-primary-purple text-white p-6 rounded-md flex gap-8 justify-between opacity-75
+                          hover:cursor-pointer hover:opacity-100"
           >
             <div className="flex items-center">
               <GiWallet size={60} />
@@ -61,8 +61,8 @@ const Home = () => {
         </Link>
         <Link to="/access-wallet">
           <div
-            className="h-[100%] w-[100%] md:w-[550px] xl:w-[600px] bg-primary-green text-white p-6 rounded-md flex gap-8 justify-between
-                          hover:cursor-pointer hover:translate-y-1"
+            className="h-[100%] w-[100%] md:w-[550px] xl:w-[600px] bg-primary-green text-white p-6 rounded-md flex gap-8 justify-between opacity-75
+                          hover:cursor-pointer hover:opacity-100"
           >
             <div className="flex items-center">
               <FaUnlockAlt size={60} />
@@ -166,9 +166,7 @@ const Home = () => {
         <div className="mb-10 flex flex-wrap gap-5 items-center justify-between">
           <div className="flex flex-wrap items-center gap-1">
             <p>Have not found the question that you are looking for?</p>
-            <Link to="/more">
-              <p className="text-primary-green font-bold">see more...</p>
-            </Link>
+            
           </div>
           <div className="flex items-center gap-3">
             <PiCallBellBold className="text-primary-green" size={25} />
