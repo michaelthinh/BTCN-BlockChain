@@ -1,5 +1,4 @@
 import Block from "./Block.ts";
-// import Transaction from "./Transaction.ts";
 import { getCurrentTime } from "@/helpers/index.ts";
 
 // Lớp Blockchain đại diện cho toàn bộ chuỗi khối
@@ -7,27 +6,23 @@ class BlockChain {
   chain: Block[];
   difficulty: number;
   miningReward: number;
-  validators: any; // { [address: string]: number }
+  validators: any; 
 
-  // Hàm khởi tạo cho blockchain
   constructor() {
-    this.chain = [this.createGenesisBlock()]; // Khởi tạo chuỗi với block đầu tiên (Genesis Block)
-    this.difficulty = 2; // Độ khó của thuật toán băm (không sử dụng trong PoS)
+    this.chain = [this.createGenesisBlock()]; 
+    this.difficulty = 2; 
     this.miningReward = 100;
-    this.validators = {}; // Danh sách các validators và số lượng stake của họ
+    this.validators = {};
   }
 
-  // Tạo block đầu tiên trong chuỗi (Genesis Block)
   createGenesisBlock() {
     return new Block(getCurrentTime(), "Genesis block", "0");
   }
 
-  // Lấy block mới nhất trong chuỗi
   getLatestBlock() {
     return this.chain[this.chain.length - 1];
   }
 
-  // Lấy vị trí mới nhất trong chuỗi
   getLatestIndex() {
     return this.chain.length - 1;
   }
@@ -55,10 +50,9 @@ class BlockChain {
       }
     }
 
-    return ""; // Trường hợp không có validator nào được chọn
+    return ""; 
   }
 
-  // Thêm một block mới vào chuỗi
   addBlock(data: any): void {
     const newBlock = new Block(
       getCurrentTime(), // Thời gian hiện tại

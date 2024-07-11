@@ -16,11 +16,11 @@ class Block {
     previousHash = "",
     validator = ""
   ) {
-    this.timestamp = timestamp;
+    this.timestamp = timestamp; // Mốc thời gian giao dịch
     this.transactions = transactions; // Dữ liệu giao dịch trong block
     this.previousHash = previousHash; // Hàm băm của block trước
     this.hash = this.caculateHash(); // Hàm băm của block hiện tại
-    this.nonce = 0; // Khởi tạo nonce với giá trị 0
+    this.nonce = 0; // Khởi tạo nonce 
     this.validator = validator; // Người xác thực (validator) của block này
   }
 
