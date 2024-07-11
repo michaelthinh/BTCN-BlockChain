@@ -1,0 +1,5 @@
+1. MyEtherWallet: https://www.myetherwallet.com
+2. Helper MyEhterWallet: https://help.myetherwallet.com/en/articles/5942415-connect-to-mew-web-with-mew-wallet
+3. DevLane: https://www.devlane.com/blog/implementing-a-blockchain-with-javascript
+4. CodeMentor: https://www.codementor.io/@savjee/implementing-proof-of-work-blockchain-in-javascript-part-2-k9ozymkqw
+5. Blackbox AI: https://www.blackbox.ai
