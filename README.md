@@ -50,3 +50,7 @@ VITE_API_URL=http://localhost:5000
 ./client/npm install
 ./client/npm run dev
 ```
+
+## Video demo dự án
+
+**[[BTCN phần ứng dụng BlockChain] - Các công nghệ mới trong phát triển phần mềm - CQ2020/3](https://www.youtube.com/watch?v=HCSu9MpwTv0)**
